@@ -786,7 +786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactorSource: {fileID: 1021994393}
-  interactionRange: 20
+  interactionRange: 5
   interactionKey: 101
   interactionKeyRegular: {fileID: 21300000, guid: 641e839d2a2096b4a90fa5c93b17ee98, type: 3}
   interactionKeyHeld: {fileID: 21300000, guid: 2232321440a65ab428c6df9cef7887ba, type: 3}
