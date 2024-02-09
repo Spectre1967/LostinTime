@@ -787,7 +787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactorSource: {fileID: 1021994393}
   playerCamera: {fileID: 1021994392}
-  interactionRange: 5
+  interactionRange: 4
   interactionKey: 101
   holdTime: 0.5
   interactionKeyRegular: {fileID: 21300000, guid: 641e839d2a2096b4a90fa5c93b17ee98, type: 3}
