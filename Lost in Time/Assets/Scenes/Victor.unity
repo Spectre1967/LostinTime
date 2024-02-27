@@ -430,6 +430,7 @@ MonoBehaviour:
   markerRenderer: {fileID: 1031480947}
   validColor: {r: 0, g: 1, b: 0.09256599, a: 0.49019608}
   invalidColor: {r: 1, g: 0, b: 0.2754097, a: 0.49019608}
+  maxDistance: 10
 --- !u!195 &387417705
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1944,11 +1945,11 @@ PrefabInstance:
       objectReference: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2294285419138231798, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2294285419138231798, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2294285419138231798, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1960,7 +1961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2294285419138231798, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2706985541570773995, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_IsActive
@@ -1972,11 +1973,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 374caaa2f46babf4c9d408c154b133ea, type: 3}
     - target: {fileID: 5379722769603398339, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5379722769603398339, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5379722769603398339, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1988,7 +1989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5379722769603398339, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5392402194345793012, guid: 49c4f39066aa5e74d9263899f3df97d5, type: 3}
       propertyPath: m_AnchorMax.y

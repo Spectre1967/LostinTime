@@ -13,6 +13,8 @@ public class KattMovement : MonoBehaviour
     [Space]
     public Color validColor;
     public Color invalidColor;
+    [Space]
+    public float maxDistance = 100;
 
     private Ray _ray;
     private RaycastHit _hit;
@@ -38,7 +40,7 @@ public class KattMovement : MonoBehaviour
             holdingLMB = false;
             _ray = _camera.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(_ray, out _hit, 1000f))
+            if (Physics.Raycast(_ray, out _hit, maxDistance))
             {
                 followingPlayer = false;
                 agent.destination = _hit.point;
@@ -54,7 +56,7 @@ public class KattMovement : MonoBehaviour
         {
             _ray = _camera.ScreenPointToRay(Input.mousePosition);
 
-            bool raycast = Physics.Raycast(_ray, out _hit, 1000f);
+            bool raycast = Physics.Raycast(_ray, out _hit, maxDistance);
             if (raycast)
             {
                 locationMarker.position = _hit.point;
@@ -62,7 +64,7 @@ public class KattMovement : MonoBehaviour
             }
             else
             {
-                locationMarker.position = _ray.GetPoint(1000f);
+                locationMarker.position = _ray.GetPoint(maxDistance);
                 markerRenderer.material.color = invalidColor;
             }
 
