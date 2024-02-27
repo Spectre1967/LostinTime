@@ -60,6 +60,7 @@ public class PlayerPickup : MonoBehaviour
             else {
                 dropPromptText.text = "Drop " + currentPickableObject.pickupName;
             }
+            dropPromptGroup.gameObject.SetActive(true);
             dropPromptGroup.alpha = 1;
 
             currentPickableObject.transform.position = Vector3.Lerp(currentPickableObject.transform.position, pickedUpPosition.position + currentPickableObject.offsetPosition, Time.deltaTime * 50);
@@ -73,6 +74,7 @@ public class PlayerPickup : MonoBehaviour
         else
         {
             dropPromptGroup.alpha = 0;
+            dropPromptGroup.gameObject.SetActive(false);
         }
     }
 }

@@ -6,10 +6,25 @@ using UnityEngine;
 public class PlayerEvents : MonoBehaviour
 {
     public static PlayerEvents current;
+    public CanvasGroup followPromptCanvas;
 
     private void Awake()
     {
         current = this;
+    }
+
+    private void Update()
+    {
+        if (!KattMovement.followingPlayer)
+        {
+            followPromptCanvas.gameObject.SetActive(true);
+            followPromptCanvas.alpha = 1;
+        }
+        else
+        {
+            followPromptCanvas.alpha = 0;
+            followPromptCanvas.gameObject.SetActive(false);
+        }
     }
 
     public event Action<PickableObject> onPickupObject;
